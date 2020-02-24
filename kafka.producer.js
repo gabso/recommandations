@@ -1,7 +1,7 @@
 var kafka = require('kafka-node'),
     Producer = kafka.Producer,
     client = new kafka.KafkaClient({
-        kafkaHost: 'localhost:29092'
+        kafkaHost: '0.0.0.0:29092'
     }),
     producer = new Producer(client);
 
